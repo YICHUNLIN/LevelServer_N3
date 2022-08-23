@@ -1,0 +1,36 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "web": "node ./bin/www"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "basic-auth": "^2.0.1",
+    "cookie-parser": "~1.4.4",
+    "cors": "^2.8.5",
+    "crypto-js": "^4.0.0",
+    "debug": "~2.6.9",
+    "dotenv": "^10.0.0",
+    "express": "~4.16.1",
+    "js-base64": "^2.5.2",
+    "jwt-decode": "^3.1.2",
+    "morgan": "~1.9.1",
+    "multer": "^1.4.2",
+    "mysql2": "^2.1.0",
+    "node-fetch": "^2.6.0",
+    "oauth2-server": "^3.0.1",
+    "passport": "^0.4.1",
+    "passport-custom": "^1.1.1",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^5.21.8",
+    "util": "^0.12.3",
+    "uuid": "^8.0.0",
+    "uuid-validate": "0.0.3",
+    "winston": "^3.2.1"
+  }
+}
