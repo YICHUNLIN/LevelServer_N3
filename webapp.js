@@ -11,12 +11,20 @@ const fs = require('fs');
 
 
 
-/**
- * @method GET /path
- * @description 取得 Path
- */
+app.get('/ori_data', (req, res) => {
+    let data = fs.readFileSync('./ori_data.json')
+    return res.status(200).json(JSON.parse(data))
+})
+
+
 app.get('/data', (req, res) => {
     let data = fs.readFileSync('./data.json')
+    return res.status(200).json(JSON.parse(data))
+})
+
+
+app.get('/center', (req, res) => {
+    let data = fs.readFileSync('./center.json')
     return res.status(200).json(JSON.parse(data))
 })
 module.exports = app;
